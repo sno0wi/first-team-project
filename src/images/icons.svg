@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+	<defs>
+		<symbol id="mobile-menu-close" viewBox="0 0 32 32">
+			<path d="M24 8L8 24" stroke="" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+			<path d="M8 8L24 24" stroke="" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+		</symbol>
+        <symbol>
+            
+        </symbol>
+	</defs>
+</svg>
