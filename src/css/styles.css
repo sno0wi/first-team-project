@@ -5,7 +5,7 @@
   |============================
 */
 
-/* @import url('./header.css');
+@import url('./header.css');
 @import url('./hero.css');
 @import url('./advertisement.css');
 @import url('./about_us.css');
@@ -13,7 +13,7 @@
 @import url('./our_mentors.css');
 @import url('./sign_up.css');
 @import url('./reviews.css');
-@import url('./footer.css'); */
+@import url('./footer.css');
 
 /**
   |============================
@@ -30,9 +30,9 @@
 
 :root {
   --black: #121212;
-  --light_black: #1D1D1D;
-  --gradient_black: linear-gradient(180deg, #060707 0%, #1D1D1D 100%);
-  --brown: #BEA69E;
+  --light_black: #1d1d1d;
+  --gradient_black: linear-gradient(180deg, #060707 0%, #1d1d1d 100%);
+  --brown: #bea69e;
   --white: #fff;
 }
 
@@ -113,7 +113,6 @@ p {
   .bgc_wrapper {
     background-image: url(../img/background/bgc_header-hero_laptop.png);
   }
-
 }
 
 @media screen and (min-width: 1280px) and (min-resolution: 192dpi) {

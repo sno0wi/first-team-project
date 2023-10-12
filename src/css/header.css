@@ -1,0 +1,30 @@
+.header-inner {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  padding: 8px 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: var(--black, #121212);
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.camera {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #1d1d1d;
+  width: 32px;
+  height: 32px;
+  margin-right: 14px;
+}
+
+.header-btn-menu {
+  width: 32px;
+  height: 22px;
+  padding: 0;
+}
