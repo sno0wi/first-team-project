@@ -5,6 +5,11 @@
 }
 
 /* Mobile */
+.about-us-pic {
+  border-radius: 1000px;
+  background: lightgray -16301954001208846px -514168741151723400px /
+    670326570992920700% 330827669314972600% no-repeat;
+}
 
 /* Tablet */
 
