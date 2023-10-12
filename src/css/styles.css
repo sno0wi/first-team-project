@@ -38,7 +38,6 @@
 
 body {
   font-family: 'DM Sans', sans-serif;
-  background-color: var(--black);
 }
 
 h1,
@@ -70,6 +69,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   padding: 0 20px;
+  background-color: var(--black);
 }
 
 .bgc_wrapper {
