@@ -1,0 +1,11 @@
+.container {
+  /* to see container boundaries, delete later */
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+/* Mobile */
+
+/* Tablet */
+
+/* Desktop */
