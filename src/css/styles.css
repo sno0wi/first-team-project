@@ -77,7 +77,6 @@ p {
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  background-size: cover;
   max-width: 100%;
   min-width: 320px;
   max-width: 375px;
