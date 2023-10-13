@@ -1,0 +1,15 @@
+.container {
+  /* to see container boundaries, delete later */
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+/* Mobile */
+.about-us-pic {
+  border-radius: 1000px;
+  background: lightgray no-repeat;
+}
+
+/* Tablet */
+
+/* Desktop */
