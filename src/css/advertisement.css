@@ -73,6 +73,7 @@
     .advertisement {
         font-size: 40px;
         line-height: 1.25;
+        max-width: 768px;
     }
 
     .advertisement__line {
@@ -84,6 +85,7 @@
     .advertisement {
         font-size: 59px;
         line-height: 1.08;
+        max-width: 1280px;
     }
 
     .advertisement__line {
