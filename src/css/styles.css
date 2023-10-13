@@ -76,7 +76,7 @@ p {
   background-image: url(../img/background/bgc_header-hero_mob.png);
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed;
+  background-attachment: local;
   max-width: 100%;
   min-width: 320px;
   max-width: 375px;
