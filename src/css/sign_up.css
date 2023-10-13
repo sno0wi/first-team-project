@@ -23,7 +23,7 @@
     line-height: 1.3;
     /* 128.571% */
     letter-spacing: -0.28px;
-    width: 280px;
+    width: 100%;
     margin-bottom: 40px;
 }
 
@@ -36,26 +36,46 @@
 }
 
 .register-input {
-    width: 280px;
+    width: 100%;
     height: 46px;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.20);
     background-color: transparent;
+    padding: 14px 18px;
+    /* Text */
+    color: var(--white);
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3;
+    /* 128.571% */
+    opacity: 0.7;
 }
 
 .register-textarea {
     resize: none;
-    width: 280px;
-    height: 112px;
+    width: 100%;
+    min-height: 112px;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.20);
     background: transparent;
     margin-bottom: 40px;
+    padding: 14px 18px;
+    /* Text */
+    color: var(--white);
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3;
+    /* 128.571% */
+    opacity: 0.7;
 }
 
 .sign-up-button {
     display: inline-flex;
-    width: 280px;
+    width: 100%;
     padding: 14px 127px;
     justify-content: center;
     align-items: center;
@@ -74,7 +94,7 @@
 }
 
 .privacy-policy {
-    width: 280px;
+    width: 100%;
     color: rgba(255, 255, 255, 0.5);
     font-family: "DM Sans", sans-serif;
     font-size: 12px;
@@ -85,6 +105,7 @@
 }
 
 .privacy-policy-link {
+    color: rgba(255, 255, 255, 0.50);
     text-decoration-line: underline;
 }
 
