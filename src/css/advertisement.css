@@ -1,0 +1,89 @@
+.advertisement {
+    position: relative;
+    overflow: hidden;
+    font-family: DM Sans;
+    color: var(--brown);
+    font-weight: 400;
+    font-size: 28px;
+    text-transform: uppercase;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    background-color: var(--black);
+}
+
+.advertisement::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.20);
+    border-radius: 2px;
+}
+
+.advertisement::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.20);
+    border-radius: 2px;
+}
+
+
+.advertisement .span {
+    color: var(--white);
+}
+
+.advertisement__inner {
+    display: flex;
+}
+
+.advertisement__line {
+    flex-shrink: 0;
+    margin: 0;
+    padding: 20px 0;
+    min-width: 100%;
+    white-space: nowrap;
+    animation-name: advertisement_ani;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes advertisement_ani {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+    .advertisement {
+        font-size: 40px;
+        line-height: 1.25;
+    }
+
+    .advertisement__line {
+        padding: 24px 0;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .advertisement {
+        font-size: 59px;
+        line-height: 1.08;
+    }
+
+    .advertisement__line {
+        padding: 24px 0;
+    }
+}
