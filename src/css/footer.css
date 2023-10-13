@@ -1,0 +1,35 @@
+footer, a {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--black);
+    color: var(--white);
+background-image: url(../img/background/bgc_header-hero_mob.png);
+
+}
+
+.footer-logo {
+    fill: var(--white);
+}
+
+.footer-contacts {
+    font-style: normal;
+}
+
+@media screen and (min-width: 375px)  and (max-width:768.98px){
+    footer {
+        background-image: url(../img/background/bgc_header-hero_tab.png);
+        
+    }
+.footer-block-social-menu{
+    display: flex;
+    gap: 14px;
+}
+.footer-info{
+    display: flex;
+   justify-content: space-between;
+}
+}
+
+@media screen and (min-width: 1280px) {}
+
+@media screen and (min-width: 1440px) {}
