@@ -19,29 +19,68 @@
       rel="stylesheet"
     />
     
-    <link rel="stylesheet" href="/first-team-project/assets/index-456f5608.css">
+    <script type="module" crossorigin src="/first-team-project/assets/index-1385de65.js"></script>
+    <link rel="stylesheet" href="/first-team-project/assets/index-bb3b106f.css">
   </head>
   <body>
     <div class="bgc_wrapper container">
-      <header>
+      <header class="header container">
   <div class="header-inner">
     <svg class="logo" width="127" height="20">
-      <use></use>
+      <use href="/first-team-project/assets/icons-3bc194bc.svg#logo"></use>
     </svg>
 
     <div class="camera">
       <svg width="16" height="16">
-        <use></use>
+        <use href="/first-team-project/assets/icons-3bc194bc.svg#mobile-camera">
+          <a href="#sign-up"></a>
+        </use>
       </svg>
     </div>
 
-    <button class="header-btn-menu">
+    <button class="header-btn-menu" type="button" data-menu-open>
       <svg width="32" height="22">
-        <use></use>
+        <use href="/first-team-project/assets/icons-3bc194bc.svg#mobile-nav"></use>
       </svg>
     </button>
   </div>
+  <a class="btn-link-anc" href="#sign-up">Sign up </a>
 </header>
+
+<div class="backdrop is-hidden" data-menu>
+  <div class="header-nav-menu">
+    <button class="nav-menu-close" type="button" data-menu-close>
+      <svg width="32" height="32">
+        <use href="/first-team-project/assets/icons-3bc194bc.svg#mobile-menu-close"></use>
+      </svg>
+    </button>
+    <ul class="menu-list">
+      <li class="menu-link-first">
+        <a class="link" href="#about-us">About us</a>
+      </li>
+      <li class="menu-link">
+        <a class="link" href="#our-courses">Our courses</a>
+      </li>
+      <li class="menu-link">
+        <a class="link" href="#our-mentors">Our mentors</a>
+      </li>
+      <li class="menu-link"><a class="link" href="#reviews">Reviews</a></li>
+      <li class="menu-link"><a class="link" href="#contacts">contacts</a></li>
+    </ul>
+    <div class="container-img-camera">
+      <picture>
+        <source
+          srcset="/first-team-project/assets/camera-nav-menu-tablet-ecd044c9.jpg 1x, /first-team-project/assets/camera-nav-menu-tablet@2x-a1a2ad47.jpg 2x"
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="/first-team-project/assets/camera-nav-menu-fead98ee.jpg 1x, /first-team-project/assets/camera-nav-menu@2x-56f105ad.jpg 2x"
+        />
+        <img src="/first-team-project/assets/camera-nav-menu-fead98ee.jpg" alt="camera" />
+      </picture>
+    </div>
+  </div>
+</div>
 
       <section class="section">
   <div style="color: aliceblue">
@@ -280,6 +319,6 @@
     
     
     
-    <!-- <script type="module" src="/main.js"></script> -->
+    
   </body>
 </html>
