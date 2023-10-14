@@ -1,7 +1,10 @@
+header.header {
+  padding: 20px 20px;
+}
+
 .header-inner {
   display: flex;
   align-items: center;
-  margin-top: 20px;
   padding: 8px 20px;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -10,6 +13,7 @@
 
 .logo {
   margin-right: auto;
+  fill: #ffffff;
 }
 
 .camera {
@@ -21,10 +25,148 @@
   width: 32px;
   height: 32px;
   margin-right: 14px;
+  fill: #bea69e66;
 }
 
 .header-btn-menu {
   width: 32px;
   height: 22px;
   padding: 0;
+  border: none;
+  stroke: #ffffff;
+  background-color: transparent;
+}
+
+.header-btn-menu:hover {
+  stroke: var(--brown);
+}
+
+.header-btn-menu:focus {
+  stroke: var(--brown);
+}
+
+.btn-link-anc {
+  color: #121212;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.55;
+  text-transform: uppercase;
+
+  border-radius: 12px;
+  background: #fff;
+  padding: 16px 58px;
+}
+
+.btn-link-anc:focus {
+  background: var(--brown);
+}
+
+.btn-link-anc:hover {
+  background: var(--brown);
+}
+
+/* Modal menu */
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(18, 18, 18, 0.4);
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .header-nav-menu {
+  transform: translateX(100%);
+}
+
+.header-nav-menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 218px;
+  background-color: var(--brown);
+  transform: translateX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: auto 0 auto 20px;
+}
+
+.menu-link-first {
+  color: var(--black);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.menu-link {
+  color: var(--black);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.link {
+  color: var(--black);
+}
+
+.container-img-camera {
+  height: 329px;
+}
+
+.nav-menu-close {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  top: 20px;
+  right: 20px;
+  padding: 0;
+  border: none;
+  stroke: #121212;
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) {
+  .header-nav-menu {
+    width: 480px;
+  }
+
+  .camera {
+    display: none;
+  }
+
+  header.header {
+    display: flex;
+    gap: 13px;
+    padding: 20px 32px 40px;
+  }
+
+  .header-inner {
+    width: 504px;
+  }
 }
