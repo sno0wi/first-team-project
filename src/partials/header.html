@@ -18,6 +18,7 @@
       </svg>
     </button>
   </div>
+  <a class="btn-link-anc" href="#sign-up">Sign up </a>
 </header>
 
 <div class="backdrop is-hidden" data-menu>
@@ -42,14 +43,20 @@
     </ul>
     <div class="container-img-camera">
       <picture>
-        <source />
-        <img
+        <source
+          srcset="
+            ./img/header/camera-nav-menu-tablet.jpg    1x,
+            ./img/header/camera-nav-menu-tablet@2x.jpg 2x
+          "
+          media="(min-width:768px)"
+        />
+        <source
           srcset="
             ./img/header/camera-nav-menu.jpg    1x,
             ./img/header/camera-nav-menu@2x.jpg 2x
           "
-          src="./img/header/camera-nav-menu.jpg"
         />
+        <img src="./img/header/camera-nav-menu.jpg" alt="camera" />
       </picture>
     </div>
   </div>

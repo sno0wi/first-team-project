@@ -37,6 +37,36 @@ header.header {
   background-color: transparent;
 }
 
+.header-btn-menu:hover {
+  stroke: var(--brown);
+}
+
+.header-btn-menu:focus {
+  stroke: var(--brown);
+}
+
+.btn-link-anc {
+  color: #121212;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.55;
+  text-transform: uppercase;
+
+  border-radius: 12px;
+  background: #fff;
+  padding: 16px 58px;
+}
+
+.btn-link-anc:focus {
+  background: var(--brown);
+}
+
+.btn-link-anc:hover {
+  background: var(--brown);
+}
+
 /* Modal menu */
 
 .backdrop {
@@ -117,4 +147,26 @@ header.header {
   padding: 0;
   border: none;
   stroke: #121212;
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) {
+  .header-nav-menu {
+    width: 480px;
+  }
+
+  .camera {
+    display: none;
+  }
+
+  header.header {
+    display: flex;
+    gap: 13px;
+    padding: 20px 32px 40px;
+  }
+
+  .header-inner {
+    width: 504px;
+  }
 }
