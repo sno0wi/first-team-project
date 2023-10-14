@@ -63,6 +63,7 @@ p {
   margin: 0;
 }
 
+/* MOB */
 .container {
   min-width: 320px;
   max-width: 375px;
@@ -90,6 +91,10 @@ p {
   }
 }
 
+/* MOB */
+
+/* TAB */
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -108,6 +113,10 @@ p {
   }
 }
 
+/* TAB */
+
+/* DESK */
+
 @media screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;
@@ -115,16 +124,41 @@ p {
   }
 
   .bgc_wrapper {
-    background-image: url(../img/background/bgc_header-hero_laptop.png);
+    background-image: url(../img/background/bgc_header-hero_desk.png);
     max-width: 1280px;
   }
 }
 
 @media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
   .bgc_wrapper {
-    background-image: url(../img/background/bgc_header-hero_laptop@2x.png);
+    background-image: url(../img/background/bgc_header-hero_desk@2x.png);
   }
 }
+
+
+
+/* DESK */
+
+/* DESK 1440 */
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+
+  .bgc_wrapper {
+    background-image: url(../img/background/bgc_header-hero_desk1440.png);
+    max-width: 1440px;
+  }
+}
+
+@media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
+  .bgc_wrapper {
+    background-image: url(../img/background/bgc_header-hero_desk1440@2x.png);
+  }
+}
+
+/* DESK 1440 */
 
 /**
   |============================
