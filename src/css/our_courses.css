@@ -154,9 +154,22 @@
 }
 
 @media screen and (min-width: 1280px) {
-  
+  .container.courses {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .courses-text {
+    gap: 410px;
+  }
+
+  .courses-list-item {
+    flex-basis: calc((100% - 40px) / 3)
+  }
 }
 
 @media screen and (min-width: 1440px) {
-  
+  .courses-list-header {
+    margin-bottom: 200px;
+  }
 }
