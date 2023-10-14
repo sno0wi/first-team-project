@@ -30,6 +30,8 @@
 .about-us-pic {
   border-radius: 1000px;
   overflow: hidden;
+  position: relative;
+  max-width: 100%;
   width: 335px;
   height: 209px;
   background: var(--brown, #bea69e);
@@ -37,12 +39,13 @@
 
 .about-us-img {
   display: block;
-  height: 100%;
+  position: absolute;
   width: 100%;
+  top: -50%;
   object-fit: cover;
-  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in;
 }
-.about-us-img:hover {
+.about-us-pic:hover .about-us-img {
   transform: rotate(-90deg);
 }
 
@@ -73,14 +76,18 @@
     letter-spacing: -0.04em;
   }
 
+  .about-us-content {
+    display: flex;
+    gap: 50px;
+  }
+
   .about-us-pic {
     width: 704px;
     height: 340px;
   }
 
-  .about-us-content {
-    display: flex;
-    gap: 50px;
+  .about-us-img {
+    top: -90%;
   }
 
   .about-us-text {
@@ -118,6 +125,10 @@
     height: 260px;
   }
 
+  .about-us-img {
+    top: -72%;
+  }
+
   .about-us-text {
     gap: 20px;
   }
@@ -146,6 +157,9 @@
     height: 240px;
   }
 
+  .about-us-img {
+    top: -100%;
+  }
   .about-us-text {
     gap: 40px;
     margin: 10px 0;
