@@ -39,7 +39,11 @@
     justify-content: space-between;
 
 }
-
+.avatars{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
 .users-list {
     display: flex;
     flex-direction: row;
@@ -55,23 +59,19 @@
     box-sizing: border-box;
 }
 
-.users-list-item:not(:first-child) {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
+
 
 .users-list-item.first {
     z-index: 3;
 }
 
 .users-list-item.second {
-    transform: translateX(82.5%);
+    transform: translateX(-17.5%);
     z-index: 2;
 }
 
 .users-list-item.third {
-    transform: translateX(165%);
+    transform: translateX(-35%);
     z-index: 1;
 }
 
@@ -134,7 +134,80 @@
     justify-content: center;
     align-items: center;
 }
+.hero-reviews-block-inside {
+   display: flex;
+   flex-direction: column;
+   gap: 4px;
+}
 
 .hero-image {
+    margin-top: 31px;
     max-width: 259px;
 }
+
+
+/* Media */
+@media screen and (min-width: 768px) {
+    .hero {
+     padding: 64px 32px 0;
+    }
+    
+    .main-title {
+        max-width: 517px;      
+        font-size: 60px;        
+        line-height: 1.06;
+        letter-spacing: -2.4px;
+    }
+    .hero-description{
+       max-width: 418px;
+    }
+    .users-list-item {
+        width: 54px;
+        height: 54px;
+    }
+    .avatars {
+        display: flex;
+        flex-direction: row;
+    }
+    .hero-link-students{                  
+        font-size: 16px;                      
+        line-height: 1.25;
+        letter-spacing: -0.64px;
+        flex-direction: column;
+        gap: 8px;
+        align-items: start;
+    }
+    .hero-link-students-text {
+        max-width: 82px;
+    }
+        .galery-link {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            gap: 40px;
+    
+        }
+        .hero-review-icon {
+            
+            width: 50px;
+            height: 50px;
+            
+        }
+    .hero-review-text {
+        font-size: 16px;
+        line-height: 1.24;
+     
+    }
+    .hero-review-numbers {
+        line-height: 1.25;
+     }
+     .hero-reviews-block-inside{
+            gap: 8px;
+     }
+         .hero-image {
+            margin-top: 46px;
+             max-width: 393px;
+         }
+   
+}
+@media screen and (min-width: 1280px) {}
