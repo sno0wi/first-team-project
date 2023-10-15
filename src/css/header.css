@@ -1,5 +1,5 @@
 header.header {
-  padding: 20px 20px;
+  padding: 20px 0;
 }
 
 .header-inner {
@@ -16,6 +16,37 @@ header.header {
   fill: #ffffff;
 }
 
+.dsk-header-list {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.dsk-header-link {
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dsk-header-link:hover {
+  color: var(--brown);
+}
+
+.dsk-header-link:focus {
+  color: var(--brown);
+}
+
+.icon-header-mobile {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
 .camera {
   display: flex;
   align-items: center;
@@ -26,6 +57,15 @@ header.header {
   height: 32px;
   margin-right: 14px;
   fill: #bea69e66;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.camera:hover {
+  fill: var(--brown);
+}
+
+.camera:focus {
+  fill: var(--brown);
 }
 
 .header-btn-menu {
@@ -35,6 +75,7 @@ header.header {
   border: none;
   stroke: #ffffff;
   background-color: transparent;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-btn-menu:hover {
@@ -57,14 +98,19 @@ header.header {
   border-radius: 12px;
   background: #fff;
   padding: 16px 58px;
+
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-link-anc:focus {
-  background: var(--brown);
+  color: var(--brown);
+  background: var(--light_black);
 }
 
 .btn-link-anc:hover {
-  background: var(--brown);
+  color: var(--brown);
+  background: var(--light_black);
 }
 
 /* Modal menu */
@@ -93,7 +139,7 @@ header.header {
   display: flex;
   flex-direction: column;
   top: 0;
-  right: 0;
+  right: calc((100vw - 382px) / 2);
   bottom: 0;
   width: 218px;
   background-color: var(--brown);
@@ -151,9 +197,16 @@ header.header {
 
 /* Tablet */
 
+@media screen and (max-width: 767.98px) {
+  .btn-link-anc {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .header-nav-menu {
     width: 480px;
+    right: calc((100vw - 780px) / 2);
   }
 
   .camera {
@@ -163,10 +216,44 @@ header.header {
   header.header {
     display: flex;
     gap: 13px;
-    padding: 20px 32px 40px;
   }
 
   .header-inner {
     width: 504px;
+  }
+}
+
+@media screen and (max-width: 1279.98px) {
+  .dsk-header-link {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header-btn-menu {
+    display: none;
+  }
+
+  header.header {
+    gap: 19px;
+  }
+
+  .header-inner {
+    width: 822px;
+    padding: 21px 50px;
+  }
+
+  .btn-link-anc {
+    padding: 16px 84px;
+  }
+
+  .link {
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header-inner {
+    width: 982px;
   }
 }
