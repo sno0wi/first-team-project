@@ -4,14 +4,10 @@ footer {
     background-color: var(--black);
     color: var(--white);
     width: 100%;
-
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
 
 }
 
-a {
-    color: var(--white);
-    width: 100%;
-}
 
 .footer-logo {
     fill: var(--white);
@@ -33,15 +29,27 @@ a {
 
 }
 
+.footer-contacts a {
+    color: var(--white);
+}
+
 .footer-block-social-menu {
     display: flex;
     gap: 40px;
     margin-bottom: 75px;
     font-size: 14px;
     font-weight: 400;
-    line-height: 1.6;
+    /* line-height: 1.3; */
     letter-spacing: 0.08em;
     text-transform: uppercase;
+}
+
+.social-networks a {
+    color: var(--white);
+}
+
+.footer-menu a {
+    color: var(--white);
 }
 
 .footer-menu-list {
@@ -50,13 +58,14 @@ a {
     gap: 14px;
     font-size: 14px;
     font-weight: 400;
-    line-height: 1.2;
     letter-spacing: 0.02em;
 }
 
 .submit-input {
     width: 216px;
     height: 60px;
+    width: 100%;
+    margin-bottom: 40px;
     border-radius: 12px;
     border: 1px solid var(--white);
     font-size: 16px;
@@ -83,11 +92,7 @@ a {
     gap: 8px;
 }
 
-.submit-input {
-    width: 100%;
-    height: 60px;
-    margin-bottom: 40px;
-}
+
 
 .submit-label {
     width: 100%;
@@ -124,8 +129,10 @@ a {
     display: flex;
     flex-direction: column;
 }
+
 @media screen and (min-width: 768px) and (max-width: 1279.98px) {
     footer {
+
         padding-left: 32px;
         padding-right: 32px;
     }
@@ -139,6 +146,7 @@ a {
     .footer-logo-icon {
         width: 123px;
         height: 16px;
+        translate: -2px;
     }
 
     .footer-contacts {
@@ -150,6 +158,8 @@ a {
         font-weight: 400;
         line-height: 1.2;
         letter-spacing: 0.02em;
+
+
     }
 
     .footer-block-social-menu {
@@ -158,15 +168,14 @@ a {
         margin-bottom: 0;
         margin-top: 50px;
         padding-right: 3px;
-    }
+        font-size: 14px;
 
-    .social-networks-links {
-
-        gap: 20px;
+        /* line-height: 1.3; */
     }
 
     .footer-menu-list {
-        gap: 20px;
+        gap: 14px;
+
     }
 
     .submit-form {
@@ -174,11 +183,17 @@ a {
 
     }
 
+    .footer-description {
+        padding-bottom: 74px;
+    }
+
     .footer-description,
     .submit-form {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
+
     }
 
     .submit-label {
@@ -201,3 +216,112 @@ a {
 
 }
 
+@media screen and (min-width:1279.98px) {
+
+    .footer-logo {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+
+    }
+
+    .footer-logo-icon {
+        width: 123px;
+        height: 16px;
+        translate: -2px;
+    }
+
+    .footer-contacts {
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+        margin-right: 285px;
+        width: 100%;
+
+    }
+
+    .footer-block-social-menu {
+        display: flex;
+        gap: 50px;
+        margin-top: 50px;
+        font-size: 14px;
+        /* line-height: 1.3; */
+    }
+
+    .footer-menu-list {
+        margin-right: 135px;
+        width: 100%;
+    }
+
+
+    .footer-menu-list,
+    .social-networks-links {
+        gap: 20px;
+    }
+
+    .submit-form {
+        gap: 16px;
+        margin-top: 50px;
+
+    }
+
+    .footer-description,
+    .submit-form {
+        display: flex;
+        flex-direction: row;
+
+
+    }
+
+    .submit-label {
+        width: 100%;
+        max-width: 216px;
+    }
+
+    .footer-info {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.2;
+        letter-spacing: 0.002em;
+        margin-bottom: 25px;
+    }
+
+    .copyright-text {
+        width: 134px;
+
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .footer-logo {
+        margin-top: 50px;
+    }
+
+    .footer-logo-icon {
+        translate: -2px;
+    }
+
+    .footer-contacts {
+        margin-top: 25px;
+        margin-right: 341px;
+    }
+
+    .footer-block-social-menu {
+        gap: 100px;
+    }
+
+    .footer-menu-list,
+    .social-networks-links {
+        gap: 20px;
+    }
+
+    .footer-menu-list {
+        margin-right: 191px;
+    }
+
+    .submit-form {
+        gap: 16px;
+        margin-top: 50px;
+
+    }
+}
