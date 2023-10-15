@@ -55,7 +55,6 @@ header.header {
   background-color: #1d1d1d;
   width: 32px;
   height: 32px;
-  margin-right: 14px;
   fill: #bea69e66;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -122,6 +121,7 @@ header.header {
   opacity: 1;
   visibility: visible;
   transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out;
+  z-index: 1;
 }
 
 .is-hidden {
@@ -176,6 +176,15 @@ header.header {
 
 .link {
   color: var(--black);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link:hover {
+  color: var(--white);
+}
+
+.link:focus {
+  color: var(--white);
 }
 
 .container-img-camera {
@@ -193,6 +202,15 @@ header.header {
   padding: 0;
   border: none;
   stroke: #121212;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-menu-close:hover {
+  stroke: var(--white);
+}
+
+.nav-menu-close:focus {
+  stroke: var(--white);
 }
 
 /* Tablet */
