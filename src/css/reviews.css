@@ -9,8 +9,8 @@ svg {
 }
 
 .reviews-container {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    padding-top:40px;
+    padding-bottom:80px;
 }
 
 .reviews-contant {
@@ -94,8 +94,8 @@ svg {
 @media screen and (min-width: 768px) {
 
     .reviews-container {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 100px;
     }
 
     .reviews-contant {
@@ -156,3 +156,25 @@ svg {
 } 
 
 
+@media screen and (max-width: 1279px) {
+    .student-second {
+    display: none;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    
+    .reviews-container {
+        padding-top: 75px;
+        padding-bottom: 150px;
+        }
+
+    .contant-wrap-r {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+    .reviews-contant {
+        margin: 0;
+    }
+}
