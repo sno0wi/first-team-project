@@ -12,6 +12,7 @@
     max-width: 375px;
     margin-left: auto;
     margin-right: auto;
+
 }
 
 .advertisement::after {
@@ -81,6 +82,10 @@
     }
 }
 
+/* TABLET */
+
+/* DESK */
+
 @media screen and (min-width: 1280px) {
     .advertisement {
         font-size: 59px;
@@ -92,3 +97,21 @@
         padding: 24px 0;
     }
 }
+
+/* DESK */
+
+/* DESK-1440 */
+
+@media screen and (min-width: 1440px) {
+    .advertisement {
+        font-size: 59px;
+        line-height: 1.08;
+        max-width: 11440px;
+    }
+
+    .advertisement__line {
+        padding: 24px 0;
+    }
+}
+
+/* DESK-1440 */
