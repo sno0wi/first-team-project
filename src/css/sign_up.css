@@ -1,9 +1,6 @@
-.register-section {
-    min-width: 320px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 40px 20px;
-    background-color: var(--black);
+.container.sign-up-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .sign-up-tittle {
@@ -184,14 +181,17 @@
 /* MEDIA */
 
 @media screen and (min-width: 375px) {
-    .register-section {
+    .sign-up-section {
         max-width: 375px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .register-section {
+    .sign-up-section {
         max-width: 768px;
+    }
+
+    .container.sign-up-section {
         padding-top: 50px;
         padding-bottom: 50px;
     }
@@ -252,8 +252,13 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .register-section {
+    .sign-up-section {
         max-width: 1280px;
+    }
+
+    .container.sign-up-section {
+        padding-top: 75px;
+        padding-bottom: 75px;
     }
 
     .sign-up-inner {
@@ -279,7 +284,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-    .register-section {
+    .sign-up-section {
         max-width: 1440px;
     }
 
