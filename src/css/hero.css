@@ -1,6 +1,6 @@
 .section {
-  padding-top: 20px;
-  padding-bottom: 100px;
+  padding-top: 0;
+  padding-bottom: 80px;
 }
 .hero {
   background-color: var(--light_black);
@@ -152,8 +152,8 @@
 /* Media */
 @media screen and (min-width: 768px) {
   .section {
-    padding-top: 40px;
-    padding-bottom: 124px;
+    padding-top: 20px;
+    padding-bottom: 100px;
   }
   .hero {
     padding: 64px 32px 0;
@@ -214,8 +214,8 @@
 }
 @media screen and (min-width: 1280px) {
   .section {
-    padding-top: 80px;
-    padding-bottom: 174px;
+    padding-top: 60px;
+    padding-bottom: 150px;
   }
   .container.hero-container {
     padding: 0;
