@@ -1,7 +1,9 @@
 .mentor-container {
-  max-width: 335px;
   padding-top: 40px;
   padding-bottom: 40px;
+}
+.mentor-container {
+  padding-top: 40px;
 }
 .mentor-list {
   display: flex;
@@ -14,7 +16,7 @@
 }
 .mentor-item img {
   border-radius: 50%;
-  margin: 16px;
+  margin-bottom: 16px;
 }
 .mentor {
   flex-direction: column;
@@ -22,7 +24,6 @@
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-
   gap: 4px;
 }
 
@@ -32,6 +33,7 @@
   font-weight: 500;
   line-height: 1.14em;
   letter-spacing: -0.03em;
+  margin-bottom: 40px;
 }
 .mentor-title-span {
   color: var(--brown);
@@ -52,24 +54,27 @@
 }
 @media screen and (min-width: 768px) {
   .mentor-container {
-    max-width: 704px;
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+  .mentor-container {
+    padding-top: 50px;
   }
   .mentor-list {
     gap: 93px 100px;
   }
-  .mentor-item {
+  .mentor-item:not(:last-child) {
     margin-bottom: 0;
   }
   .mentor-title-section {
     font-size: 48px;
     line-height: 1.12em;
     letter-spacing: -0.04em;
+    margin-bottom: 50px;
   }
   .mentor-title {
     font-size: 28px;
-    line-height: 1.14em;
+    line-height: 1.142em;
   }
   .mentor-text {
     font-size: 14px;
@@ -79,25 +84,38 @@
 }
 @media screen and (min-width: 1280px) {
   .mentor-container {
-    max-width: 1080px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+  .mentor-container {
+    padding-top: 75px;
+  }
+  .mentor-list {
+    gap: 100px;
+  }
+  .mentor-item {
+    width: calc((100% - 300px) / 4);
+  }
+  .mentor-mia {
+    width: 194px;
+    height: 250px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .mentor-container {
     padding-top: 75px;
     padding-bottom: 75px;
   }
   .mentor-list {
     gap: 100px;
+    margin-top: 50px;
+    margin-left: 103px;
+    margin-right: 103px;
   }
   .mentor-item {
     width: calc((100% - 300px) / 4);
   }
-}
-@media screen and (min-width: 1440px) {
-  .mentor-container {
-    max-width: 1240px;
-  }
-  .mentor-list {
-    gap: 100px;
-  }
-  .mentor-item {
-    width: calc((100% - 300px) / 4);
+  .mentor {
+    text-wrap: nowrap;
   }
 }
