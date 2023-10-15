@@ -63,7 +63,7 @@
   .mentor-list {
     gap: 93px 100px;
   }
-  .mentor-item {
+  .mentor-item:not(:last-child) {
     margin-bottom: 0;
   }
   .mentor-title-section {
