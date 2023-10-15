@@ -1,0 +1,92 @@
+
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.reviews-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+}
+
+.reviews-contant {
+    max-width: 335%;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+
+}
+
+
+.reviews-title {
+    margin-bottom: 40px;
+    color: var(--white);
+    font-size: 28px; 
+    font-weight: 500;
+    line-height: 1.14;
+   letter-spacing: 0.04em;
+}
+
+.student-reviews {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.student-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    justify-content: center;
+}
+
+.reviews-name{
+    color: var(--white);
+    font-weight: 500;
+    line-height: 1.2;    
+}
+
+
+.reviews-status {
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 12px;
+    line-height: 1.33;
+    font-weight: 400;
+    letter-spacing: 0.02em;    
+}
+
+
+ .star-svg-list {
+    margin-left: 66px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 4px;
+}
+
+
+
+.star-reviews {
+    fill: var(--brown);
+
+}
+
+.star-reviews-last {
+    fill: #414141;
+}
+
+
+.reviews-text {
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.29;
+    letter-spacing: 0.02em;
+}
+
+
