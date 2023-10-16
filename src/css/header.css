@@ -121,7 +121,7 @@ header.header {
   opacity: 1;
   visibility: visible;
   transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out;
-  z-index: 1;
+  z-index: 999;
 }
 
 .is-hidden {
@@ -139,7 +139,7 @@ header.header {
   display: flex;
   flex-direction: column;
   top: 0;
-  right: calc((100vw - 382px) / 2);
+  right: 0;
   bottom: 0;
   width: 218px;
   background-color: var(--brown);
@@ -221,10 +221,16 @@ header.header {
   }
 }
 
+@media screen and (min-width: 375px) {
+  .header-nav-menu {
+    right: calc((100vw - 375px) / 2 - 4px);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .header-nav-menu {
     width: 480px;
-    right: calc((100vw - 780px) / 2);
+    right: calc((100vw - 768px) / 2 - 7px);
   }
 
   .camera {
