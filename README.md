@@ -1,3 +1,5 @@
+Жива сторінка - https://sno0wi.github.io/first-team-project/
+
 # Vanilla App Template
 
 Цей проект було створено за допомогою Vite. Для знайомства та налаштування
